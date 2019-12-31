@@ -1,0 +1,9 @@
+long marcsCakewalk(vector<int> calorie) {
+sort(calorie.begin(),calorie.end());
+long d=0;
+int k=0;
+for(int i=calorie.size()-1;i>=0;--i){
+ d+=(pow(2,k++)*calorie[i]);
+}
+return d;
+}
