@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+// Complete the jimOrders function below.
+int main()
+{   int n,a,b;
+cin>>n;
+    multimap<int,int> m;
+    for(int i=1;i<=n;++i)
+    {
+        cin>>a>>b;
+        m.insert(make_pair(a+b,i));
+    }
+ multimap<int,int> :: iterator it; 
+    for (it=m.begin() ; it!=m.end() ; it++) 
+        cout << it->second<<" "; 
+  
+    return 0;
+}
